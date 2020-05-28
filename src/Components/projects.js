@@ -85,7 +85,7 @@ export default function Projects(props) {
                 </div>
 
                 <ModalFooter>
-                    <button color="#802BB1" onClick={togglePolyBlock}>Cancel</button>
+                    <button id="close-modal-bttn" onClick={togglePolyBlock}>Cancel</button>
                 </ModalFooter>
             </Modal>
         </div>

@@ -50,6 +50,9 @@ html,body {
     cursor: pointer;
 }
 
+#construction {
+    margin-top: 350px;
+}
 b {
      font-size: 35px; 
 }
