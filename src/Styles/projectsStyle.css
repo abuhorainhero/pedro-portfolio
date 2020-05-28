@@ -1,0 +1,142 @@
+.projects-container.text-center h1 {
+    margin-top: 50px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+.container-fluid .row.projects {
+    margin-top: 100px;
+}
+
+.row.projects img{
+    max-height: 350px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.project-on-hover {
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    visibility: hidden;
+    opacity: 100%;
+}
+
+.col-lg-3 {
+    margin-top: 50px;
+}
+
+img:hover {
+
+    cursor: pointer;
+}
+
+.col-lg-3:hover img{
+    opacity: 50%;
+    filter: sepia(100%);
+    cursor: pointer;
+    -webkit-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.modal-bttns {
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 400px;
+}
+
+.col-md-4 a img {
+    width: 100px;
+    height: 45px;
+}
+
+.col-md-4 #apple-badge {
+    width: 90px;
+    height: 30px;
+    margin-left: 4px;
+    
+}
+
+ ul li {
+    --c: #802BB1;
+    color: var(--c);
+    font-size: 15px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+    float: left;
+
+}
+
+.fa.fa-github{
+    font-size: 20px;
+}
+ ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+ ul li:hover {
+    color: white;
+    cursor: pointer;
+
+}
+
+ ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+ ul li span:nth-child(2) {
+    --n: 2;
+}
+
+ ul li span:nth-child(3) {
+    --n: 3;
+}
+
+
+.modal-body {
+    text-align: justify;
+}
+
+.row.skills {
+margin-top: 15px;
+}
+
+.col-md-4.col-xs-12 img {
+    max-width: 100%;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  }

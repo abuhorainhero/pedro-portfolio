@@ -1,0 +1,78 @@
+html,body {
+    background-color: #d1d7e0;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+.col-lg-6.intro-content{
+    margin-top: 130px;
+}
+
+.intro-content h1 {
+    font-size: 50px;
+    color: #d1d7e0;
+}
+
+.intro-content p {
+    font-size: 26px;
+    margin-top: 20px;
+    color: #d1d7e0;
+
+}
+
+.intro-content hr{
+    height: 3px;
+    width: 100px;
+    background-color: #802BB1;
+}
+
+.intro-content hr:first-child {
+    width: 450px;
+}
+
+.intro-content button{
+    margin-top: 20px;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #d1d7e0;
+    border: none;
+    color: #802BB1;
+    font-weight: bolder;
+}
+
+.intro-content button:hover{
+    box-shadow: 0 0 40px 40px #802BB1 inset, 0 0 0 0 #802BB1;
+	-webkit-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+    color: #d1d7e0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+b {
+     font-size: 35px; 
+}
+.home {
+    background-color: #2d283e;
+    box-shadow: 0px 4px 5px -3px black;
+}
+
+.home #blank {
+    height: 250px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 10px;
+    opacity: 50%;
+}
+
+::-webkit-scrollbar-track {
+    background-color: lightgray;
+    border-radius: 10px;
+}

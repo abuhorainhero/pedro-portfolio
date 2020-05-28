@@ -1,0 +1,28 @@
+.navContainer {
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    background-color: #802BB1;
+    z-index: 99;
+}
+
+.links.text-right {
+    padding-top: 1%;
+}
+
+.links a {
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 350;
+    color: #d1d7e0 !important;
+}
+
+a {
+    margin-right: 20px;
+}
+
+a:hover{
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
