@@ -9,10 +9,7 @@ function App() {
 
       {/* Navbar component */}
       <Header />
-      <div id="construction">
-        <h1> Machadao is currently constructing this! Please wait...</h1>
-        <a target='_blank' href="http://www.chumbogordo.com.br/wp-content/uploads/2019/06/bolsonaro-rainha-meme2.jpg">Clicke Aqui</a>
-      </div>
+      
       {/* Introduction Structure */}
       <div className="home">
       <div className="container">
