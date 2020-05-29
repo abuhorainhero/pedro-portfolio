@@ -8,13 +8,13 @@ function App() {
     <div className="App text-center">
 
       {/* Navbar component */}
-      {/* <Header /> */}
+      <Header />
       <div id="construction">
         <h1> Machadao is currently constructing this! Please wait...</h1>
         <a target='_blank' href="http://www.chumbogordo.com.br/wp-content/uploads/2019/06/bolsonaro-rainha-meme2.jpg">Clicke Aqui</a>
       </div>
       {/* Introduction Structure */}
-      {/* <div className="home">
+      <div className="home">
       <div className="container">
         <div className="row text-center justify-content-center">
           <div className="col-lg-6 intro-content">
@@ -33,15 +33,15 @@ function App() {
           </div>
         </div>
       </div>
-      </div> */}
+      </div>
 
 
       {/* Projects Section Component */}
-      {/* <Projects />
+      <Projects />
       <div id="projects">
 
       </div>
-      */}
+     
 
     </div> 
   );
