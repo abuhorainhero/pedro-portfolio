@@ -1,15 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+    NavbarText
+} from 'reactstrap';
 import '../Styles/headerStyle.css'
 import { Link } from "react-scroll";
 
-export default function header() {
+export default function Header() {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => setIsOpen(!isOpen);
+
+
     return (
-        <nav className="navContainer">
-            <div className="links text-right">
-            <Link to='projects' smooth={true} duration={1000}>Projects</Link>
-            <Link to='/home/#section1'>About Me</Link>
-            <Link to='/home/#section1'>Contact</Link>
-            </div>
-        </nav>
+
+        <div>
+            <Navbar light expand="sm" fixed='top' className="navContainer text-right">
+                <NavbarToggler onClick={toggle} />
+                <Collapse isOpen={isOpen} navbar>
+                    <Nav className="links">
+                        <NavItem>
+                            <NavLink><Link to='projects' smooth={true} duration={1000}>Projects</Link></NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink><Link to='projects' smooth={true} duration={1000}>About Me</Link></NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink><Link to='projects' smooth={true} duration={1000}>Contact</Link></NavLink>
+                        </NavItem>
+
+                    </Nav>
+                </Collapse>
+            </Navbar>
+        </div>
     )
 }

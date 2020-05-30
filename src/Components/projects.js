@@ -3,10 +3,27 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 
 import '../Styles/projectsStyle.css'
+
+//Polyblock Imports
 import PolyBlock from '../Images/polyblock.png'
+import PolyBlockImg1 from '../Images/polyblock1.png'
+import PolyBlockImg2 from '../Images/polyblock2.png'
+import PolyBlockImg3 from '../Images/polyblock3.png'
+
+//Rate My Art Imports
+import RateMyArt from '../Images/ratemyart.png'
+import RateMyArt1 from '../Images/ratemyart1.png'
+import RateMyArt2 from '../Images/ratemyart2.png'
+import RateMyArt3 from '../Images/ratemyart3.png'
+
+//Good News Imports
+import GoodNews from '../Images/goodNews.png'
+import GoodNews1 from '../Images/goodNews2.png'
+
 import AppleBadge from '../Images/appleBadge.png'
 
-import ProjectCarousel from './projectCarousel'
+import GoodNewsTrailer from '../Videos/goodnewsTrailer.MP4'
+
 
 export default function Projects(props) {
 
@@ -16,13 +33,13 @@ export default function Projects(props) {
     } = props;
 
     const [polyBlockModal, setPolyBlockModal] = useState(false)
-    const [project2Modal, setProject2Modal] = useState(false)
-    const [project3Modal, setProject3Modal] = useState(false)
+    const [artModal, setArtModal] = useState(false)
+    const [newsModal, setNewsModal] = useState(false)
 
 
     const togglePolyBlock = () => setPolyBlockModal(!polyBlockModal)
-    const toggleProject2 = () => setProject2Modal(!project2Modal)
-    const toggleProject3 = () => setProject3Modal(!project3Modal)
+    const toggleArt = () => setArtModal(!artModal)
+    const toggleNews = () => setNewsModal(!newsModal)
 
 
     return (
@@ -34,11 +51,11 @@ export default function Projects(props) {
                     <div className="col-lg-3" onClick={togglePolyBlock}>
                         <img src={PolyBlock} />
                     </div>
-                    <div className="col-lg-3" onClick={toggleProject2}>
-                        <img src={PolyBlock} />
+                    <div className="col-lg-3" onClick={toggleArt}>
+                        <img src={RateMyArt} />
                     </div>
-                    <div className="col-lg-3" onClick={toggleProject3}>
-                        <img src={PolyBlock} />
+                    <div className="col-lg-3" onClick={toggleNews}>
+                        <img src={GoodNews} />
                     </div>
                 </div>
             </div>
@@ -59,10 +76,13 @@ export default function Projects(props) {
                             <div class="row skills">
                                 <span>Skills: <strong>C#, Unity Engine, Unity Ads, Photoshop CC</strong></span>
                             </div>
+                            <div class="row skills">
+                                <span>Time Taken: 3 Months</span>
+                            </div>
                             <div class="row text-center">
-                                <div class="col-md-4 col-xs-12"><img src={PolyBlock} /></div>
-                                <div class="col-md-4 col-xs-12"><img src={PolyBlock} /></div>
-                                <div class="col-md-4 col-xs-12"><img src={PolyBlock} /></div>
+                                <div class="col-md-4 col-xs-12"><img src={PolyBlockImg1} /></div>
+                                <div class="col-md-4 col-xs-12"><img src={PolyBlockImg2} /></div>
+                                <div class="col-md-4 col-xs-12"><img src={PolyBlockImg3} /></div>
                             </div>
                         </div>
                         <div className="modal-bttns">
@@ -86,6 +106,118 @@ export default function Projects(props) {
 
                 <ModalFooter>
                     <button id="close-modal-bttn" onClick={togglePolyBlock}>Cancel</button>
+                </ModalFooter>
+            </Modal>
+
+
+            {/* Rate My Art Modal */}
+            <Modal isOpen={artModal} toggle={toggleArt} className={className} size="lg">
+                <div className="modal-body">
+                    <ModalHeader toggle={toggleArt}>Rate My Art - Social Media Platform For Artists</ModalHeader>
+                    <ModalBody>
+                        <div class="container">
+                            <div class="row justify">
+                                This is a social media platform targeted for artists and architects to post their work.
+                                Each user can create an account or log in to an existent one. After being signed it, they
+                                can view every art work posted. The algorithm used to display the works takes into account
+                                the time in which the upload was posted and a combination of likes plus comments it received.
+                                This allows users to grow organically through the website. Users can also follow other users and
+                                see their own following feed, which only displays posts from their followers. This project also
+                                includes the use of password hashing and authentication by using sessions. The input fields are
+                                also protected against attacks, specially SQL injections.
+                            </div>
+                            <div class="row skills">
+                                <span>Skills: <strong>Node JS, ExpressJS, Google Cloud API (GCS), MYSQL, HTML, CSS, JQuery, AJAX </strong></span>
+                            </div>
+                            <div class="row skills">
+                                <span>Time Taken: 2 Months</span>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-md-4 col-xs-12"><img src={RateMyArt1} /></div>
+                                <div class="col-md-4 col-xs-12"><img src={RateMyArt2} /></div>
+                                <div class="col-md-4 col-xs-12"><img src={RateMyArt3} /></div>
+                            </div>
+                        </div>
+                        <div className="modal-bttns">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <a href="https://github.com/machadop1407/rate-my-art" target='_blank'><li><i class="fa fa-github" />   Github <span></span><span></span><span></span><span></span></li></a>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <a href="http://rate-my-art.herokuapp.com" target='_blank'><li><i class="fa fa-code" />   Demo <span></span><span></span><span></span><span></span></li></a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ModalBody>
+                </div>
+
+                <ModalFooter>
+                    <button id="close-modal-bttn" onClick={toggleArt}>Cancel</button>
+                </ModalFooter>
+            </Modal>
+
+
+            {/* Good News Modal */}
+            <Modal isOpen={newsModal} toggle={toggleNews} className={className} size="lg">
+                <div className="modal-body">
+                    <ModalHeader toggle={toggleNews}>Hope - A Platform To Provide Assistance During the COVID-19 Pandemic</ModalHeader>
+                    <ModalBody>
+                        <div class="container">
+                            <div class="row justify">
+                                This is a website made in 24 hours by 3 other teammates
+                                and I during the MLH OpenHacks Hackathon. The project
+                                aimed to provide good news to people during a time when
+                                most of what is on the media is related to the damage
+                                caused by the virus. We used the NewsAPI to fetch the
+                                information, and filtered what is considered good or
+                                bad news through a series of key words. The website
+                                also offers a selection of volunteering opportunities
+                                based on your current location. Finally, we established
+                                a connection between the user and a group of charities
+                                related to the pandemic, in which they can donate.
+                            </div>
+                            <div class="row skills">
+                                <span>Skills: <strong>Node Js, Google Cloud API (Job Engine), News API, HTML5, CSS </strong></span>
+                            </div>
+                            <div class="row skills">
+                                <span>Time Taken: 24 Hours</span>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-md-4 col-xs-12"><img src={RateMyArt1} /></div>
+                                <video width="380" height="225" controls>
+                                    <source src={GoodNewsTrailer} type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                        <div className="modal-bttns">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <a href="https://github.com/machadop1407/news-app" target='_blank'><li><i class="fa fa-github" />   Github <span></span><span></span><span></span><span></span></li></a>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <a href="https://weneedhope.herokuapp.com/" target='_blank'><li><i class="fa fa-code" />   Demo <span></span><span></span><span></span><span></span></li></a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ModalBody>
+                </div>
+
+                <ModalFooter>
+                    <button id="close-modal-bttn" onClick={toggleNews}>Cancel</button>
                 </ModalFooter>
             </Modal>
         </div>

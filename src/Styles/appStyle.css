@@ -5,7 +5,7 @@ html,body {
 }
 
 .col-lg-6.intro-content{
-    margin-top: 130px;
+    margin-top: 170px;
 }
 
 .intro-content h1 {
@@ -59,10 +59,11 @@ b {
 .home {
     background-color: #2d283e;
     box-shadow: 0px 4px 5px -3px black;
+    width: 100%;
 }
 
 .home #blank {
-    height: 250px;
+    height: 265px;
 }
 
 ::-webkit-scrollbar {
@@ -71,11 +72,37 @@ b {
 }
 ::-webkit-scrollbar-thumb {
     background-color: black;
-    border-radius: 10px;
     opacity: 50%;
 }
 
 ::-webkit-scrollbar-track {
     background-color: lightgray;
-    border-radius: 10px;
+}
+
+.page-footer {
+    margin-top: 300px;
+    background-color: #802BB1;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.page-footer .footer-content, a {
+    font-size: 20px;
+    color: white;
+}
+
+.footer-content {
+    margin-top: auto;
+}
+
+.page-footer a:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 450px) {
+    .App {
+        width: 469px;
+    }
+
 }

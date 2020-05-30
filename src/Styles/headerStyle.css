@@ -1,13 +1,12 @@
 .navContainer {
     width: 100%;
-    height: 80px;
     margin: 0;
-    background-color: #802BB1;
+    background-color: #802BB1 !important;
     z-index: 99;
 }
 
 .links.text-right {
-    padding-top: 1%;
+
 }
 
 .links a {
@@ -18,7 +17,7 @@
 }
 
 a {
-    margin-right: 20px;
+    
 }
 
 a:hover{
