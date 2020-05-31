@@ -190,7 +190,7 @@ export default function Projects(props) {
                                 <span>Time Taken: 24 Hours</span>
                             </div>
                             <div class="row text-center">
-                                <div class="col-md-4 col-xs-12"><img src={RateMyArt1} /></div>
+                                <div class="col-md-4 col-xs-12"><img src={GoodNews1} /></div>
                                 <video width="380" height="225" controls>
                                     <source src={GoodNewsTrailer} type="video/mp4" />
                                 </video>

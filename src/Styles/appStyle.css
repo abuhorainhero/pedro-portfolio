@@ -53,17 +53,26 @@ html,body {
 #construction {
     margin-top: 350px;
 }
-b {
+.col-lg-6.intro-content b{
      font-size: 35px; 
 }
 .home {
     background-color: #2d283e;
     box-shadow: 0px 4px 5px -3px black;
     width: 100%;
+    min-height: 845px;
 }
 
-.home #blank {
-    height: 265px;
+
+.social-links a li {
+    margin-left: 10px;
+}
+
+.social-links a:hover {
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    font-weight: 800;
 }
 
 ::-webkit-scrollbar {
@@ -79,26 +88,7 @@ b {
     background-color: lightgray;
 }
 
-.page-footer {
-    margin-top: 300px;
-    background-color: #802BB1;
-    height: 70px;
-    width: 100%;
-    text-align: center;
-}
 
-.page-footer .footer-content, a {
-    font-size: 20px;
-    color: white;
-}
-
-.footer-content {
-    margin-top: auto;
-}
-
-.page-footer a:hover {
-    color: white;
-}
 
 @media only screen and (max-width: 450px) {
     .App {
