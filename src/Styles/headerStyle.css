@@ -3,6 +3,7 @@
     margin: 0;
     background-color: #802BB1 !important;
     z-index: 99;
+    box-shadow: 1px 1px 6px black;
 }
 
 .links.text-right {

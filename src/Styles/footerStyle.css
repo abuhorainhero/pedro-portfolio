@@ -2,6 +2,7 @@
   
     background-color: #4c495d;
     box-shadow: inset 1px 1px 5px black;
+    min-height: 500px;
 
 }
 
@@ -18,253 +19,90 @@
     color: white;
 }
 
-input {
-	outline: none;
-	border: none;
+.row.justify-content-center.title {
+  margin-top: 0px;
 }
 
-textarea {
-  outline: none;
-  border: none;
+.row.justify-content-center.title h1{
+  margin-top: 50px;
+
 }
 
-textarea:focus, input:focus {
-  border-color: transparent !important;
+.col-lg-4 {
+  margin-top: 120px;
+}
+.col-lg-7{
+  margin-top: 80px;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
-
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
-
-input::-webkit-input-placeholder { color: #999999; }
-input:-moz-placeholder { color: #999999; }
-input::-moz-placeholder { color: #999999; }
-input:-ms-input-placeholder { color: #999999; }
-
-textarea::-webkit-input-placeholder { color: #999999; }
-textarea:-moz-placeholder { color: #999999; }
-textarea::-moz-placeholder { color: #999999; }
-textarea:-ms-input-placeholder { color: #999999; }
-
-/*---------------------------------------------*/
-button {
-	outline: none !important;
-	border: none;
-	background: transparent;
-}
-
-button:hover {
-	cursor: pointer;
-}
-
-iframe {
-	border: none !important;
-}
-
-
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ Contact 2 ]*/
-.bg-contact2 {
-  width: 100%;  
- 
-}
-
-.container-contact2 {
-  width: 100%;  
-  max-height: 670px;
-  display: flex;
-  flex-wrap: wrap;
+.col-lg-7 .row {
   justify-content: center;
-  align-items: center;
-  padding: 55px;
-  
-}
-
-.wrap-contact2 {
-  width: 620px;
-  background: #d1d7e0;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 72px 55px 90px 55px;
 }
 
 
-/*------------------------------------------------------------------
-[  ]*/
-
-.contact2-form {
-  width: 100%;
+.col-lg-7 .row.resume{
+  margin-top: 20px;
+}
+.col-lg-7 .col-md-2, .col-lg-7 .col-md-2 .fa.fa-github {
+  margin: 5px;
+  font-size: 50px;
 }
 
-.contact2-form-title {
-  display: block;
-  font-size: 39px;
-  font-weight: bolder;
-  color: #333333;
-  line-height: 1.2;
-  text-align: center;
-  padding-top: 0;
-}
-
-
-
-/*------------------------------------------------------------------
-[  ]*/
-input, textarea {
-  background-color: #d1d7e0;
-}
-.wrap-input2 {
-  width: 100%;
-  position: relative;
-  border-bottom: 2px solid #adadad;
-  margin-bottom: 37px;
-}
-
-.input2 {
-  display: block;
-  width: 100%;
-
-  font-size: 15px;
-  color: #555555;
-  line-height: 1.2;
-}
-
-.focus-input2 {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-}
-
-.focus-input2::before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-
-  background: #802BB1;
-  background: -webkit-linear-gradient(45deg, #802BB1, #2d283e);
-  background: -o-linear-gradient(45deg, #802BB1, #2d283e);
-  background: -moz-linear-gradient(45deg, #802BB1, #2d283e);
-  background: linear-gradient(45deg, #802BB1, #2d283e);
-}
-
-.focus-input2::after {
-  content: attr(data-placeholder);
-  display: block;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0;
-
-  font-size: 13px;
-  color: #999999;
-  line-height: 1.2;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-/* Inputs */
-input.input2 {
-  height: 45px;
-}
-
-input.input2 + .focus-input2::after {
-  top: 16px;
-  left: 0;
-}
-
-textarea.input2 {
-  min-height: 115px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-}
-
-textarea.input2 + .focus-input2::after {
-  top: 16px;
-  left: 0;
-}
-
-.input2:focus + .focus-input2::after {
-  top: -13px;
-}
-
-.input2:focus + .focus-input2::before {
-  width: 100%;
-}
-
-.has-val.input2 + .focus-input2::after {
-  top: -13px;
-}
-
-.has-val.input2 + .focus-input2::before {
-  width: 100%;
-}
-
-/* Form Bttn */
-.container-contact2-form-btn {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 13px;
-}
-
-.wrap-contact2-form-btn {
-  display: block;
-  position: relative;
-  z-index: 1;
-  border-radius: 8px;
-  width: auto;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-.contact2-form-bgbtn {
-  position: absolute;
-  z-index: -1;
-  width: 300%;
-  height: 100%;
-  background: #802BB1;
-}
-
-.contact2-form-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  min-width: 244px;
-  height: 50px;
-
-  font-size: 16px;
+.row.resume li .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  font-size: 10px;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: black;
   color: #fff;
-  line-height: 1.2;
-  
+  text-align: center;
+  border-radius: 2px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  bottom: 28%;
+  left: 57%;
+;
+  opacity: 0;
+  transition: 1s;
+}
+
+.row.resume li .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.row.resume li:hover {
+  cursor: pointer;
+}
+.row.resume li:hover .tooltiptext {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  visibility: visible;
+  opacity: 1;
 
 }
 
+.col-lg-7 .col-md-2:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 10px black;
+  -webkit-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+  
+}
+
+
+
+.col-lg-4 {
+  margin-left: 50px;
+}
 /* MEDIA QUERY */
 
 @media (max-width: 576px) {

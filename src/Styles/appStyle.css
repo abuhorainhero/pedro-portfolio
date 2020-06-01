@@ -30,25 +30,6 @@ html,body {
     width: 450px;
 }
 
-.intro-content button{
-    margin-top: 20px;
-    width: 200px;
-    height: 60px;
-    border-radius: 5px;
-    background-color: #d1d7e0;
-    border: none;
-    color: #802BB1;
-    font-weight: bolder;
-}
-
-.intro-content button:hover{
-    box-shadow: 0 0 40px 40px #802BB1 inset, 0 0 0 0 #802BB1;
-	-webkit-transition: all 200ms ease-in-out;
-	transition: all 200ms ease-in-out;
-    color: #d1d7e0;
-    font-weight: 600;
-    cursor: pointer;
-}
 
 .col-lg-6.intro-content b{
      font-size: 35px; 

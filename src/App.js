@@ -5,6 +5,9 @@ import Projects from './Components/projects'
 import Footer from './Components/Footer';
 import AboutMe from './Components/AboutMe';
 
+import Resume from './ProjectFiles/Resume.pdf'
+
+
 function App() {
   return (
     <div className="App">
@@ -30,7 +33,7 @@ function App() {
               <div className="social-links">
                 <a href="https://github.com/machadop1407" target="_blank"><li className="fa fa-github"></li></a>
                 <a href="https://www.linkedin.com/in/pedro-machado-7606871aa/" target="_blank"><li className="fa fa-linkedin"></li></a>
-                <a href="#"><li className="fa fa-address-book-o"></li></a>
+                <a href={Resume} download="PedroMachadoResume.pdf"><li className="fa fa-address-book-o"></li></a>
               </div>
               
               <div id="blank"></div>

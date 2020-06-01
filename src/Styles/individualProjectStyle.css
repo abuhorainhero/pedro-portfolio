@@ -378,3 +378,23 @@
 .card__collection .cards--three__list li:nth-child(3) {
   transition-delay: 0.4s;
 }
+
+@media only screen and (max-width: 850px) {
+
+  .card__collection.clear-fix {
+      margin-left: 25%;
+  }
+
+
+  
+}
+
+@media only screen and (max-width: 500px) {
+
+  .card__collection.clear-fix {
+      margin-left: 25px;
+  }
+
+
+  
+}
