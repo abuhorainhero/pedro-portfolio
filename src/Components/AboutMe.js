@@ -47,7 +47,7 @@ const AboutMe = () => {
                 </div>
             </div>
 
-            <div className="row  text-center justify-content-center about-description">
+            <div className="row text-center justify-content-center about-description">
                 <div className="col-sm-6">
                     <p>
                         I can work on both the front-end and the back-end of any application. 

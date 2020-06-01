@@ -38,6 +38,10 @@
 
 }
 
+.col-sm-6 p {
+    font-size: 22px;
+}
+
 
 @media only screen and (max-width: 850px) {
     .container-fluid.about-me .row.justify-content-center .col-lg-3 {

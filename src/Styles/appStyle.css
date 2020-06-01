@@ -34,6 +34,12 @@ html,body {
 .col-lg-6.intro-content b{
      font-size: 35px; 
 }
+
+.col-lg-6.intro-content h1:hover {
+    text-shadow: currentColor;
+    -webkit-animation: random 5s infinite;
+    animation: random 5s infinite;
+}
 .home {
     background-color: #2d283e;
     box-shadow: 0px 4px 5px -3px black;
@@ -67,10 +73,20 @@ html,body {
 }
 
 
+/* Title Color Animation */
+@keyframes  random {
+    15% { text-shadow: 1px 1px 5px  crimson; } 
+    30% { text-shadow: 1px 1px 5px purple; } 
+    45% { text-shadow: 1px 1px 5px greenyellow; } 
+    60% { text-shadow: 1px 1px 5px goldenrod; }
+    75% { text-shadow: 1px 1px 5px mediumvioletred; }  
+}
+
 
 @media only screen and (max-width: 450px) {
     .App {
         width: 469px;
+        color: mediumvioletred;
     }
 
 }
