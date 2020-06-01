@@ -6,12 +6,7 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText
+    NavLink
 } from 'reactstrap';
 import '../Styles/headerStyle.css'
 import { Link } from "react-scroll";
@@ -31,13 +26,13 @@ export default function Header() {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="links">
                         <NavItem>
-                            <NavLink><Link to='projects' smooth={true} duration={1000}>Projects</Link></NavLink>
+                            <NavLink><Link to='projectsLinkTo' smooth={true} offset={-126} duration={1000}>Projects</Link></NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink><Link to='projects' smooth={true} duration={1000}>About Me</Link></NavLink>
+                            <NavLink><Link to='aboutLinkTo' smooth={true} offset={-126} duration={1000}>About Me</Link></NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink><Link to='projects' smooth={true} duration={1000}>Contact</Link></NavLink>
+                            <NavLink><Link to='footerLinkTo' smooth={true} duration={1000}>Contact</Link></NavLink>
                         </NavItem>
 
                     </Nav>

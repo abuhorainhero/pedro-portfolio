@@ -39,14 +39,18 @@ function App() {
         </div>
       </div>
 
+      <div className="projectsLinkTo">
+        {/* Projects Section Component */}
+        <Projects />
+      </div>
 
-      {/* Projects Section Component */}
-      <Projects />
-      
-      <AboutMe />
+      <div className="aboutLinkTo">
+        <AboutMe />
+      </div>
 
-      <Footer />
-
+      <div className="footerLinkTo">
+        <Footer />
+      </div>
 
     </div>
   );
