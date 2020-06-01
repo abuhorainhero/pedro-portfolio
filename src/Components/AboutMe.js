@@ -7,6 +7,7 @@ const AboutMe = () => {
         <div className="container-fluid about-me">
             <div className="text-center">
                 <h1>About Me</h1>
+                <hr />
             </div>
             <div className="row justify-content-center">
                 <div className="col-lg-3">
@@ -46,12 +47,17 @@ const AboutMe = () => {
                 </div>
             </div>
 
-            <div className="row justify-content-center">
-                <p>
-                    I can work on both the front-end and the back-end of any application. 
-                    I am also experienced with Scalable Database Architecture Design,
+            <div className="row  text-center justify-content-center about-description">
+                <div className="col-sm-6">
+                    <p>
+                        I can work on both the front-end and the back-end of any application. 
+                        I am also experienced with Scalable Database Architecture Design, deployment of projects,
+                        and object-oriented programming. Currently, I am a student at the University
+                        Of British Columbia pursuing a major in Computer Science. On my spare 
+                        time I work on various different projects to build my skills and continue learning.
                     
-                </p>
+                    </p>
+                </div>
             </div>
         </div>
     )

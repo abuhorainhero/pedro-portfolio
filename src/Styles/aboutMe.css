@@ -3,6 +3,17 @@
     font-size: 25px;
 }
 
+.container-fluid.about-me {
+    min-height: 700px;
+}
+
+.container-fluid.about-me .text-center hr {
+    margin-top: 15px;
+    height: 5px;
+    max-width: 50px;
+    background-color: #2d283e;
+}
+
 .container-fluid.about-me .text-center h1 {
     margin-top: 50px;
 }
@@ -21,6 +32,13 @@
     max-width: 280px;
     margin-left: 0;
 }
+
+.row.text-center.justify-content-center.about-description {
+    margin-top: 80px;
+
+}
+
+
 
 @media only screen and (max-width: 550px) {
     .col-lg-2 {
