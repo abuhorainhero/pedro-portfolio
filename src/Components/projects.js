@@ -23,6 +23,7 @@ import GoodNews1 from '../Images/goodNews2.png'
 import AppleBadge from '../Images/appleBadge.png'
 
 import GoodNewsTrailer from '../Videos/goodnewsTrailer.MP4'
+import IndividualProject from './Projects/IndividualProject';
 
 
 export default function Projects(props) {
@@ -45,17 +46,17 @@ export default function Projects(props) {
     return (
         <div className="projects-container text-center">
             <h1>My Favourite Projects</h1>
-
+            <hr />
             <div className="container-fluid">
                 <div className="row projects justify-content-center">
                     <div className="col-lg-3" onClick={togglePolyBlock}>
-                        <img src={PolyBlock} />
+                        <IndividualProject imgPath={PolyBlock} projectName="PolyBlock"/>
                     </div>
                     <div className="col-lg-3" onClick={toggleArt}>
-                        <img src={RateMyArt} />
+                        <IndividualProject imgPath={RateMyArt} projectName="RateMyArt"/>
                     </div>
                     <div className="col-lg-3" onClick={toggleNews}>
-                        <img src={GoodNews} />
+                        <IndividualProject imgPath={GoodNews} projectName="Hope"/>
                     </div>
                 </div>
             </div>
@@ -127,7 +128,7 @@ export default function Projects(props) {
                                 also protected against attacks, specially SQL injections.
                             </div>
                             <div class="row skills">
-                                <span>Skills: <strong>Node JS, ExpressJS, Google Cloud API (GCS), MYSQL, HTML, CSS, JQuery, AJAX </strong></span>
+                                <span>Skills: <strong>Node JS | ExpressJS | Google Cloud API (GCS) | MYSQL | HTML | CSS | JQuery | AJAX </strong></span>
                             </div>
                             <div class="row skills">
                                 <span>Time Taken: 2 Months</span>

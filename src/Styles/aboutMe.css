@@ -3,6 +3,25 @@
     font-size: 25px;
 }
 
+.container-fluid.about-me .text-center h1 {
+    margin-top: 50px;
+}
+
+.container-fluid.about-me .row.justify-content-center {
+    margin-top: 50px;
+}
+.container-fluid.about-me .col-lg-3:last-child {
+    margin-left: 20px;
+}
+
+
+.col-lg-3 hr {
+    height: 3px;
+    background-color: #4c495d;
+    max-width: 280px;
+    margin-left: 0;
+}
+
 @media only screen and (max-width: 550px) {
     .col-lg-2 {
         margin-left: 0px;
