@@ -10,12 +10,7 @@ const IndividualProject = ({imgPath, projectName}) => {
                         <span class="cards--two__rect"></span>
                         <span class="cards--two__tri"></span>
                         <p>{projectName}</p>
-                        <ul class="cards__list">
-                            <li><i class="fab fa-facebook-f"></i></li>
-                            <li><i class="fab fa-twitter"></i></li>
-                            <li><i class="fab fa-instagram"></i></li>
-                            <li><i class="fab fa-linkedin-in"></i></li>
-                        </ul>
+                        
                     </div>
                 </div>
             </div>
