@@ -24,7 +24,7 @@ function App() {
                 I don't believe in <b>passion</b>. I believe in specialization
                 of labour. If you're good in something, you should continue
                 working in that untill you become an expert. And I am really{" "}
-                <b>good</b> at coding.
+                <b>good</b> at coding.adsadadsdad
               </p>
               <hr />
               <div className="social-links">
