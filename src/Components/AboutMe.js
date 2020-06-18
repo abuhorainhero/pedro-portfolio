@@ -40,8 +40,8 @@ const AboutMe = () => {
       </div>
 
       <div className="row extra-skills">
-        JAVA Object Oriented Programming -> Unity Engine With C# -> Photoshop CC
-        -> Blender 3D Modelling
+        JAVA Object Oriented Programming | Unity Engine With C# | Photoshop CC |
+        Blender 3D Modelling
       </div>
 
       <div className="row extra-skills-invisible">

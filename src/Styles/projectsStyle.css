@@ -1,158 +1,147 @@
-.projects-container.text-center  {
-    font-family: 'Titillium Web', sans-serif;
-    margin-top: 50px;
-
+.projects-container.text-center {
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 50px;
 }
 .projects-container.text-center hr {
-    margin-top: 15px;
-    height: 5px;
-    max-width: 50px;
-    background-color: #2d283e;
+  margin-top: 15px;
+  height: 5px;
+  max-width: 50px;
+  background-color: #2d283e;
 }
 
-.row.projects img{
-    max-height: 350px;
-    box-shadow: 1px 1px 10px black;
+.row.projects img {
+  max-height: 350px;
+  box-shadow: 1px 1px 10px black;
 }
 
 .project-on-hover {
-    position: absolute;
-    bottom: 0px;
-    width: 90%;
-    visibility: hidden;
-    opacity: 100%;
+  position: absolute;
+  bottom: 0px;
+  width: 90%;
+  visibility: hidden;
+  opacity: 100%;
 }
 
 .col-lg-3 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
-
-.projects-container.text-center .col-lg-3:hover{
-    cursor: pointer;
+.projects-container.text-center .col-lg-3:hover {
+  cursor: pointer;
 }
 
 .modal-bttns {
-    display: inline-flex;
-    margin-top: 10px;
+  display: inline-flex;
+  margin-top: 10px;
 }
 
 #close-modal-bttn {
-    background-color: #802BB1;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    outline: none;
+  background-color: #802bb1;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  outline: none;
 }
 
 #close-modal-bttn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
- ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    min-width: 400px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-width: 400px;
 }
 
 .col-md-4 a img {
-    width: 100px;
-    height: 45px;
+  width: 100px;
+  height: 45px;
 }
 
 .col-md-4 #apple-badge {
-    width: 90px;
-    height: 30px;
-    margin-left: 4px;
-    
+  width: 90px;
+  height: 30px;
+  margin-left: 4px;
 }
 
- .col-md-4 ul li {
-    --c: #802BB1;
-    color: var(--c);
-    font-size: 15px;
-    border: 0.3em solid var(--c);
-    border-radius: 0.5em;
-    width: 12em;
-    height: 4em;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: sans-serif;
-    letter-spacing: 0.1em;
-    text-align: center;
-    line-height: 4em;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    transition: 0.5s;
-    margin: 1em;
-    float: left;
-
+.col-md-4 ul li {
+  --c: #802bb1;
+  color: var(--c);
+  font-size: 15px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 12em;
+  height: 4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 4em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+  float: left;
 }
 
-.fa.fa-github{
-    font-size: 20px;
+.fa.fa-github {
+  font-size: 20px;
 }
- .col-md-4 ul li span {
-    position: absolute;
-    width: 25%;
-    height: 100%;
-    background-color: var(--c);
-    transform: translateY(150%);
-    border-radius: 50%;
-    left: calc((var(--n) - 1) * 25%);
-    transition: 0.5s;
-    transition-delay: calc((var(--n) - 1) * 0.1s);
-    z-index: -1;
-}
-
- .col-md-4 ul li:hover {
-    color: white;
-    cursor: pointer;
-
+.col-md-4 ul li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
 }
 
- .col-md-4 ul li:hover span {
-    transform: translateY(0) scale(2);
+.col-md-4 ul li:hover {
+  color: white;
+  cursor: pointer;
 }
 
- .col-md-4 ul li span:nth-child(2) {
-    --n: 2;
+.col-md-4 ul li:hover span {
+  transform: translateY(0) scale(2);
 }
 
- .col-md-4 ul li span:nth-child(3) {
-    --n: 3;
+.col-md-4 ul li span:nth-child(2) {
+  --n: 2;
 }
 
+.col-md-4 ul li span:nth-child(3) {
+  --n: 3;
+}
 
 .modal-body {
-    text-align: justify;
+  text-align: justify;
 }
 
 .row.skills {
-margin-top: 15px;
+  margin-top: 15px;
 }
 
 .col-md-4.col-xs-12 img {
-    max-width: 100%;
-    margin-top: 40px;
-    border-radius: 10px;
-    border: 1px solid lightgrey;
-    
+  max-width: 100%;
+  margin-top: 40px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
 }
 
 video {
-    margin-top: 35px;
-    margin-left: 50px;
+  margin-top: 35px;
+  margin-left: 50px;
 }
 
-
 @media only screen and (max-width: 600px) {
-
-    video {
-        margin-left: 15px;
-    }
-
-    
+  video {
+    margin-left: 15px;
+  }
 }
