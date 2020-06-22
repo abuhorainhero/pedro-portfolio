@@ -21,7 +21,6 @@ export default function Header() {
     <div>
       <Navbar light expand="sm" fixed="top" className="navContainer text-right">
         <img src={Logo} width="50" height="63" alt="logo" />
-
         <NavbarToggler onClick={toggle} />
 
         <Collapse isOpen={isOpen} navbar>

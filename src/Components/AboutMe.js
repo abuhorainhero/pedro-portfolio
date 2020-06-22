@@ -60,9 +60,8 @@ const AboutMe = () => {
             application. I am also experienced with Scalable Database
             Architecture Design, deployment of projects, and object-oriented
             programming. Currently, I am a student at the University Of British
-            Columbia pursuing a major in Computer Science. On my spare time I
-            work on various different projects to build my skills and continue
-            learning.
+            Columbia pursuing a major in Mathematics. On my spare time I work on
+            various different projects to build my skills and continue learning.
           </p>
         </div>
       </div>
