@@ -88,8 +88,8 @@ export default function Projects(props) {
                 platform to have access to the songs and genres they listen to.
                 I created an algorithm which takes into account the favorite
                 genres from users and match people based on it. Since there are
-                several different genres, the algorithm takes into accoutn how
-                similar the genres sre based on string similarity. When matched,
+                several different genres, the algorithm takes into account how
+                similar the genres are based on string similarity. When matched,
                 they are able to chat in real time with each other using Web
                 Sockets.
               </div>
