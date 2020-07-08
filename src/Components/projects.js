@@ -20,7 +20,7 @@ import RateMyArt2 from "../Images/ratemyart2.png";
 import RateMyArt3 from "../Images/ratemyart3.png";
 
 //Sorting Algo Visualizer Imports
-import SortingAlgoCover from "../Images/SAV.png";
+import SortingAlgoCover from "../Images/SAVtemp.png";
 import SortingAlgo from "../Images/sortingAlgo.gif";
 
 // //Good News Imports
@@ -66,7 +66,10 @@ export default function Projects(props) {
             <IndividualProject imgPath={PolyBlock} projectName="PolyBlock" />
           </div>
           <div className="col-lg-3" onClick={toggleSorting}>
-            <IndividualProject imgPath={SortingAlgoCover} projectName="Hope" />
+            <IndividualProject
+              imgPath={SortingAlgoCover}
+              projectName="Sorting"
+            />
           </div>
         </div>
       </div>
