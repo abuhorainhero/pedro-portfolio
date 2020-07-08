@@ -19,9 +19,13 @@ import RateMyArt1 from "../Images/ratemyart1.png";
 import RateMyArt2 from "../Images/ratemyart2.png";
 import RateMyArt3 from "../Images/ratemyart3.png";
 
-//Good News Imports
-import GoodNews from "../Images/goodNews.png";
-import GoodNews1 from "../Images/goodNews2.png";
+//Sorting Algo Visualizer Imports
+import SortingAlgoCover from "../Images/SAV.png";
+import SortingAlgo from "../Images/sortingAlgo.gif";
+
+// //Good News Imports
+// import GoodNews from "../Images/goodNews.png";
+// import GoodNews1 from "../Images/goodNews2.png";
 
 import AppleBadge from "../Images/appleBadge.png";
 
@@ -35,12 +39,12 @@ export default function Projects(props) {
   const [musicalChatModal, setMusicalChatModal] = useState(false);
   const [polyBlockModal, setPolyBlockModal] = useState(false);
   const [artModal, setArtModal] = useState(false);
-  const [newsModal, setNewsModal] = useState(false);
+  const [sortingModal, setSortingModal] = useState(false);
 
   const toggleMusicalChat = () => setMusicalChatModal(!musicalChatModal);
   const togglePolyBlock = () => setPolyBlockModal(!polyBlockModal);
   const toggleArt = () => setArtModal(!artModal);
-  const toggleNews = () => setNewsModal(!newsModal);
+  const toggleSorting = () => setSortingModal(!sortingModal);
 
   return (
     <div className="projects-container text-center">
@@ -61,8 +65,8 @@ export default function Projects(props) {
           <div className="col-lg-3" onClick={togglePolyBlock}>
             <IndividualProject imgPath={PolyBlock} projectName="PolyBlock" />
           </div>
-          <div className="col-lg-3" onClick={toggleNews}>
-            <IndividualProject imgPath={GoodNews} projectName="Hope" />
+          <div className="col-lg-3" onClick={toggleSorting}>
+            <IndividualProject imgPath={SortingAlgoCover} projectName="Hope" />
           </div>
         </div>
       </div>
@@ -80,8 +84,8 @@ export default function Projects(props) {
             Taste
           </ModalHeader>
           <ModalBody>
-            <div class="container">
-              <div class="row justify">
+            <div className="container">
+              <div className="row justify">
                 Musical Chat is a platform where users are able to connect and
                 Chat with people who have similar taste in music as them. The
                 user needs to login with their Spotify account, which allows the
@@ -93,7 +97,7 @@ export default function Projects(props) {
                 they are able to chat in real time with each other using Web
                 Sockets.
               </div>
-              <div class="row skills">
+              <div className="row skills">
                 <span>
                   Skills:{" "}
                   <strong>
@@ -102,14 +106,14 @@ export default function Projects(props) {
                   </strong>
                 </span>
               </div>
-              <div class="row skills">
+              <div className="row skills">
                 <span>Time Taken: 1 Month</span>
               </div>
-              <div class="row text-center justify-conent-center">
-                <div class="col-md-6 col-xs-12" id="demogif">
+              <div className="row text-center justify-conent-center">
+                <div className="col-md-6 col-xs-12" id="demogif">
                   <img src={ChatDemoGif} />
                 </div>
-                <div class="col-md-6 col-xs-12" id="demovideo">
+                <div className="col-md-6 col-xs-12" id="demovideo">
                   <video width="300" height="178" controls>
                     <source src={MusicalChatVideo} type="video/mp4" />
                   </video>
@@ -117,16 +121,16 @@ export default function Projects(props) {
               </div>
             </div>
             <div className="modal-bttns">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-4">
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-md-4">
                     <ul>
                       <a
                         href="https://github.com/machadop1407/musical-connection-client"
                         target="_blank"
                       >
                         <li>
-                          <i class="fa fa-github" /> Github <span></span>
+                          <i className="fa fa-github" /> Github <span></span>
                           <span></span>
                           <span></span>
                           <span></span>
@@ -135,14 +139,15 @@ export default function Projects(props) {
                     </ul>
                   </div>
 
-                  <div class="col-md-4">
+                  <div className="col-md-4">
                     <ul>
                       <a
                         href="https://nifty-shannon-f54cb6.netlify.app/"
                         target="_blank"
                       >
                         <li>
-                          <i class="fa fa-code" /> Live Version <span></span>
+                          <i className="fa fa-code" /> Live Version{" "}
+                          <span></span>
                           <span></span>
                           <span></span>
                           <span></span>
@@ -175,8 +180,8 @@ export default function Projects(props) {
             PolyBlock - Mobile Game
           </ModalHeader>
           <ModalBody>
-            <div class="container">
-              <div class="row justify">
+            <div className="container">
+              <div className="row justify">
                 This was a hypercasual mobile game I coded using the Unity
                 Engine and the C# programming language. This project involved
                 the use of animations, cross platform programming,
@@ -184,38 +189,38 @@ export default function Projects(props) {
                 is available for both Android and IOS, and it has a 4.8 rating
                 in the Apple App Store.
               </div>
-              <div class="row skills">
+              <div className="row skills">
                 <span>
                   Skills:{" "}
                   <strong>C#, Unity Engine, Unity Ads, Photoshop CC</strong>
                 </span>
               </div>
-              <div class="row skills">
+              <div className="row skills">
                 <span>Time Taken: 3 Months</span>
               </div>
-              <div class="row text-center">
-                <div class="col-md-4 col-xs-12">
+              <div className="row text-center">
+                <div className="col-md-4 col-xs-12">
                   <img src={PolyBlockImg1} />
                 </div>
-                <div class="col-md-4 col-xs-12">
+                <div className="col-md-4 col-xs-12">
                   <img src={PolyBlockImg2} />
                 </div>
-                <div class="col-md-4 col-xs-12">
+                <div className="col-md-4 col-xs-12">
                   <img src={PolyBlockImg3} />
                 </div>
               </div>
             </div>
             <div className="modal-bttns">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-4">
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-md-4">
                     <ul>
                       <a
                         href="https://github.com/machadop1407/Polyblock---Mobile-Game"
                         target="_blank"
                       >
                         <li>
-                          <i class="fa fa-github" /> Github <span></span>
+                          <i className="fa fa-github" /> Github <span></span>
                           <span></span>
                           <span></span>
                           <span></span>
@@ -224,7 +229,7 @@ export default function Projects(props) {
                     </ul>
                   </div>
 
-                  <div class="col-md-4">
+                  <div className="col-md-4">
                     <a
                       href="https://play.google.com/store/apps/details?id=com.pedromachado.polyblock&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
                       target="_blank"
@@ -270,8 +275,8 @@ export default function Projects(props) {
             Rate My Art - Social Media Platform For Artists
           </ModalHeader>
           <ModalBody>
-            <div class="container">
-              <div class="row justify">
+            <div className="container">
+              <div className="row justify">
                 This is a social media platform targeted for artists and
                 architects to post their work. Each user can create an account
                 or log in to an existent one. After being signed it, they can
@@ -285,7 +290,7 @@ export default function Projects(props) {
                 sessions. The input fields are also protected against attacks,
                 specially SQL injections.
               </div>
-              <div class="row skills">
+              <div className="row skills">
                 <span>
                   Skills:{" "}
                   <strong>
@@ -294,32 +299,32 @@ export default function Projects(props) {
                   </strong>
                 </span>
               </div>
-              <div class="row skills">
+              <div className="row skills">
                 <span>Time Taken: 2 Months</span>
               </div>
-              <div class="row text-center">
-                <div class="col-md-4 col-xs-12">
+              <div className="row text-center">
+                <div className="col-md-4 col-xs-12">
                   <img src={RateMyArt1} />
                 </div>
-                <div class="col-md-4 col-xs-12">
+                <div className="col-md-4 col-xs-12">
                   <img src={RateMyArt2} />
                 </div>
-                <div class="col-md-4 col-xs-12">
+                <div className="col-md-4 col-xs-12">
                   <img src={RateMyArt3} />
                 </div>
               </div>
             </div>
             <div className="modal-bttns">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-4">
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-md-4">
                     <ul>
                       <a
                         href="https://github.com/machadop1407/rate-my-art"
                         target="_blank"
                       >
                         <li>
-                          <i class="fa fa-github" /> Github <span></span>
+                          <i className="fa fa-github" /> Github <span></span>
                           <span></span>
                           <span></span>
                           <span></span>
@@ -328,14 +333,15 @@ export default function Projects(props) {
                     </ul>
                   </div>
 
-                  <div class="col-md-4">
+                  <div className="col-md-4">
                     <ul>
                       <a
                         href="http://rate-my-art.herokuapp.com"
                         target="_blank"
                       >
                         <li>
-                          <i class="fa fa-code" /> Live Version <span></span>
+                          <i className="fa fa-code" /> Live Version{" "}
+                          <span></span>
                           <span></span>
                           <span></span>
                           <span></span>
@@ -356,62 +362,52 @@ export default function Projects(props) {
         </ModalFooter>
       </Modal>
 
-      {/* Good News Modal */}
+      {/* Sorting Algo Visualizer Modal */}
       <Modal
-        isOpen={newsModal}
-        toggle={toggleNews}
+        isOpen={sortingModal}
+        toggle={toggleSorting}
         className={className}
         size="lg"
       >
         <div className="modal-body">
-          <ModalHeader toggle={toggleNews}>
-            Hope - A Platform To Provide Assistance During the COVID-19 Pandemic
+          <ModalHeader toggle={toggleSorting}>
+            Sorting Algorithms Visualizer
           </ModalHeader>
           <ModalBody>
-            <div class="container">
-              <div class="row justify">
-                This is a website made in 24 hours by 3 other teammates and I
-                during the MLH OpenHacks Hackathon. The project aimed to provide
-                good news to people during a time when most of what is on the
-                media is related to the damage caused by the virus. We used the
-                NewsAPI to fetch the information, and filtered what is
-                considered good or bad news through a series of key words. The
-                website also offers a selection of volunteering opportunities
-                based on your current location. Finally, we established a
-                connection between the user and a group of charities related to
-                the pandemic, in which they can donate.
+            <div className="container">
+              <div className="row justify">
+                This is a sorting visualizer I did while learning the important
+                sorting algorithms. It helped me understand the importance of
+                time complexity, as the algorithms have a clear discrepancy on
+                their velocity. Overall, it was a good learning experience.
               </div>
-              <div class="row skills">
+              <div className="row skills">
                 <span>
                   Skills:{" "}
                   <strong>
-                    Node Js, Google Cloud API (Job Engine), News API, HTML5, CSS{" "}
+                    ReactJS, CSS, Bubble Sort, Heap Sort, Merge Sort, Quick
+                    Sort, Radix Sort
                   </strong>
                 </span>
               </div>
-              <div class="row skills">
-                <span>Time Taken: 24 Hours</span>
+              <div className="row skills">
+                <span>Time Taken: 1 week</span>
               </div>
-              <div class="row text-center">
-                <div class="col-md-4 col-xs-12">
-                  <img src={GoodNews1} />
-                </div>
-                <video width="380" height="225" controls>
-                  <source src={GoodNewsTrailer} type="video/mp4" />
-                </video>
+              <div className="row text-center justify-content-center" id="SAV">
+                <img src={SortingAlgo} />
               </div>
             </div>
             <div className="modal-bttns">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-4">
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-md-4">
                     <ul>
                       <a
-                        href="https://github.com/machadop1407/news-app"
+                        href="https://github.com/machadop1407/Sorting-Visualizer"
                         target="_blank"
                       >
                         <li>
-                          <i class="fa fa-github" /> Github <span></span>
+                          <i className="fa fa-github" /> Github <span></span>
                           <span></span>
                           <span></span>
                           <span></span>
@@ -420,14 +416,15 @@ export default function Projects(props) {
                     </ul>
                   </div>
 
-                  <div class="col-md-4">
+                  <div className="col-md-4">
                     <ul>
                       <a
-                        href="https://weneedhope.herokuapp.com/"
+                        href="https://machadop1407.github.io/Sorting-Visualizer/"
                         target="_blank"
                       >
                         <li>
-                          <i class="fa fa-code" /> Live Version <span></span>
+                          <i className="fa fa-code" /> Live Version{" "}
+                          <span></span>
                           <span></span>
                           <span></span>
                           <span></span>
@@ -442,7 +439,7 @@ export default function Projects(props) {
         </div>
 
         <ModalFooter>
-          <button id="close-modal-bttn" onClick={toggleNews}>
+          <button id="close-modal-bttn" onClick={toggleSorting}>
             Cancel
           </button>
         </ModalFooter>
