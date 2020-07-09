@@ -44,7 +44,7 @@ export default function Footer() {
                     My Resume:{" "}
                     <a href={Resume} download="PedroMachadoResume.pdf">
                       <li className="fa fa-address-book-o">
-                        <span class="tooltiptext">Download Resume</span>
+                        <span className="tooltiptext">Download Resume</span>
                       </li>
                     </a>
                   </h1>

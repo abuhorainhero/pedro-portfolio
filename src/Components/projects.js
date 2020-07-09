@@ -47,30 +47,59 @@ export default function Projects(props) {
   const toggleSorting = () => setSortingModal(!sortingModal);
 
   return (
-    <div className="projects-container text-center">
+    // <div className="projects-container text-center">
+    //   <h1>My Favourite Projects</h1>
+    //   <hr />
+    //   <div className="container-fluid">
+    //     <div className="row projects">
+    //       <div className="col-lg-8" onClick={toggleMusicalChat}>
+    //         <IndividualProject
+    //           imgPath={MusicalChat}
+    //           projectName="Musical Chat"
+    //         />
+    //       </div>
+    //     </div>
+    //     <div className="row projects">
+    //       <div className="col-lg-8" onClick={toggleArt}>
+    //         <IndividualProject imgPath={RateMyArt} projectName="RateMyArt" />
+    //       </div>
+    //     </div>
+    //     <div className="row projects">
+    //       <div className="col-lg-8" onClick={togglePolyBlock}>
+    //         <IndividualProject imgPath={PolyBlock} projectName="PolyBlock" />
+    //       </div>
+    //     </div>
+    //     <div className="row projects">
+    //       <div className="col-lg-8" onClick={toggleSorting}>
+    //         <IndividualProject
+    //           imgPath={SortingAlgoCover}
+    //           projectName="Sorting"
+    //         />
+    //       </div>
+    //     </div>
+    //   </div>
+
+    <div className="projects-container">
       <h1>My Favourite Projects</h1>
       <hr />
-      <div className="container-fluid">
-        <div className="row projects justify-content-center">
-          <div className="col-lg-3" onClick={toggleMusicalChat}>
-            <IndividualProject
-              imgPath={MusicalChat}
-              projectName="Musical Chat"
-            />
-          </div>
-
-          <div className="col-lg-3" onClick={toggleArt}>
-            <IndividualProject imgPath={RateMyArt} projectName="RateMyArt" />
-          </div>
-          <div className="col-lg-3" onClick={togglePolyBlock}>
-            <IndividualProject imgPath={PolyBlock} projectName="PolyBlock" />
-          </div>
-          <div className="col-lg-3" onClick={toggleSorting}>
-            <IndividualProject
-              imgPath={SortingAlgoCover}
-              projectName="Sorting"
-            />
-          </div>
+      <div className="projects">
+        <div className="col-left-small" onClick={toggleMusicalChat}>
+          <IndividualProject imgPath={MusicalChat} projectName="Musical Chat" />
+        </div>
+      </div>
+      <div className="projects">
+        <div className="col-right-small" onClick={toggleArt}>
+          <IndividualProject imgPath={RateMyArt} projectName="RateMyArt" />
+        </div>
+      </div>
+      <div className="projects">
+        <div className="col-left-small" onClick={togglePolyBlock}>
+          <IndividualProject imgPath={PolyBlock} projectName="PolyBlock" />
+        </div>
+      </div>
+      <div className="projects">
+        <div className="col-right-small" onClick={toggleSorting}>
+          <IndividualProject imgPath={SortingAlgoCover} projectName="Sorting" />
         </div>
       </div>
 

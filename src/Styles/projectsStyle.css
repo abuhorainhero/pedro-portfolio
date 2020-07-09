@@ -1,17 +1,24 @@
-.projects-container.text-center {
+.projects-container {
   font-family: "Titillium Web", sans-serif;
   margin-top: 50px;
+  flex-direction: column;
+  text-align: center;
 }
 
-.projects-container.text-center hr {
+.projects-container hr {
   margin-top: 15px;
   height: 5px;
   max-width: 50px;
   background-color: #2d283e;
 }
 
-.row.projects img {
-  max-height: 350px;
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects img {
+  max-height: 400px;
   box-shadow: 1px 1px 10px black;
 }
 
@@ -23,11 +30,7 @@
   opacity: 100%;
 }
 
-.col-lg-3 {
-  margin-top: 50px;
-}
-
-.projects-container.text-center .col-lg-3:hover {
+.img-responsive:hover {
   cursor: pointer;
 }
 
@@ -155,8 +158,20 @@ video {
   margin-left: 50px;
 }
 
+@media only screen and (max-width: 1000px) {
+  #SAV img {
+    max-width: 400px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   video {
     margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #SAV img {
+    max-width: 300px;
   }
 }
