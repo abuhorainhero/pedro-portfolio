@@ -4,30 +4,30 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import "../Styles/projectsStyle.css";
 
 //MusicalChat Imports
-import MusicalChat from "../Images/musicalchat.png";
+import MusicalChat from "../Images/musicalchat.webp";
 import ChatDemoGif from "../Images/chatdemo.gif";
 
 //Polyblock Imports
-import PolyBlock from "../Images/polyblock.png";
-import PolyBlockImg1 from "../Images/polyblock1.png";
-import PolyBlockImg2 from "../Images/polyblock2.png";
-import PolyBlockImg3 from "../Images/polyblock3.png";
+import PolyBlock from "../Images/polyblock.webp";
+import PolyBlockImg1 from "../Images/polyblock1.webp";
+import PolyBlockImg2 from "../Images/polyblock2.webp";
+import PolyBlockImg3 from "../Images/polyblock3.webp";
 
 //Rate My Art Imports
-import RateMyArt from "../Images/ratemyart.png";
-import RateMyArt1 from "../Images/ratemyart1.png";
-import RateMyArt2 from "../Images/ratemyart2.png";
-import RateMyArt3 from "../Images/ratemyart3.png";
+import RateMyArt from "../Images/ratemyart.webp";
+import RateMyArt1 from "../Images/ratemyart1.webp";
+import RateMyArt2 from "../Images/ratemyart2.webp";
+import RateMyArt3 from "../Images/ratemyart3.webp";
 
 //Sorting Algo Visualizer Imports
-import SortingAlgoCover from "../Images/SAVtemp.png";
+import SortingAlgoCover from "../Images/SAVtemp.webp";
 import SortingAlgo from "../Images/sortingAlgo.gif";
 
 // //Good News Imports
 // import GoodNews from "../Images/goodNews.png";
 // import GoodNews1 from "../Images/goodNews2.png";
 
-import AppleBadge from "../Images/appleBadge.png";
+import AppleBadge from "../Images/appleBadge.webp";
 
 import GoodNewsTrailer from "../Videos/goodnewsTrailer.MP4";
 import MusicalChatVideo from "../Videos/chatdemovideo.mp4";

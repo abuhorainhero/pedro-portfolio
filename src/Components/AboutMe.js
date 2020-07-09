@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/aboutMe.css";
-import FrontEndImg from "../Images/frontEnd.png";
-import BackEndImg from "../Images/backEnd.png";
+import FrontEndImg from "../Images/frontEnd.webp";
+import BackEndImg from "../Images/backEnd.webp";
 
 const AboutMe = () => {
   return (

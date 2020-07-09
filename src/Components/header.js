@@ -10,7 +10,7 @@ import {
 } from "reactstrap";
 import "../Styles/headerStyle.css";
 import { Link } from "react-scroll";
-import Logo from "../Images/logo.png";
+import Logo from "../Images/logo.webp";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
