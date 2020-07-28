@@ -20,7 +20,7 @@ import RateMyArt2 from "../Images/ratemyart2.webp";
 import RateMyArt3 from "../Images/ratemyart3.webp";
 
 //Sorting Algo Visualizer Imports
-import SortingAlgoCover from "../Images/SAVtemp.webp";
+import SortingAlgoCover from "../Images/SAV.png";
 import SortingAlgo from "../Images/sortingAlgo.gif";
 
 // //Good News Imports
@@ -214,12 +214,12 @@ export default function Projects(props) {
           <ModalBody>
             <div className="container">
               <div className="row justify">
-                This was a hypercasual mobile game I coded using the Unity
-                Engine and the C# programming language. This project involved
-                the use of animations, cross platform programming,
-                implementation of advertisement features and UI design. The game
-                is available for both Android and IOS, and it has a 4.8 rating
-                in the Apple App Store.
+                PolyBlock is a hypercasual mobile game I coded using the Unity
+                Engine and the C# programming language. This project uses
+                animations, cross platform programming, the implementation of
+                advertisement features and UI design. The game is available for
+                both Android and IOS, and it has a 4.8 rating in the Apple App
+                Store.
               </div>
               <div className="row skills">
                 <span>
@@ -408,10 +408,11 @@ export default function Projects(props) {
           <ModalBody>
             <div className="container">
               <div className="row justify">
-                This is a sorting visualizer I did while learning the important
-                sorting algorithms. It helped me understand the importance of
-                time complexity, as the algorithms have a clear discrepancy on
-                their velocity. Overall, it was a good learning experience.
+                This project is a sorting visualizer I created while learning
+                the important sorting algorithms. It helped me understand the
+                importance of time complexity, as the algorithms have a clear
+                discrepancy in velocity. Overall, it served as a valuable
+                learning experience.
               </div>
               <div className="row skills">
                 <span>
