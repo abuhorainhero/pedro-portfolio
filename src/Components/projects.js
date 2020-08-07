@@ -23,13 +23,17 @@ import RateMyArt3 from "../Images/ratemyart3.webp";
 import SortingAlgoCover from "../Images/SAV.png";
 import SortingAlgo from "../Images/sortingAlgo.gif";
 
-// //Good News Imports
-// import GoodNews from "../Images/goodNews.png";
+//Explore Space Imports
+import ExploreSpace from "../Images/exploreSpace.png";
+import ExploreSpace1 from "../Images/space1.png";
+import ExploreSpace2 from "../Images/space2.png";
+
+// Portfolio Imports
+import Portfolio from "../Images/portfolio.png";
 // import GoodNews1 from "../Images/goodNews2.png";
 
 import AppleBadge from "../Images/appleBadge.webp";
 
-import GoodNewsTrailer from "../Videos/goodnewsTrailer.MP4";
 import MusicalChatVideo from "../Videos/chatdemovideo.mp4";
 import IndividualProject from "./Projects/IndividualProject";
 
@@ -40,11 +44,15 @@ export default function Projects(props) {
   const [polyBlockModal, setPolyBlockModal] = useState(false);
   const [artModal, setArtModal] = useState(false);
   const [sortingModal, setSortingModal] = useState(false);
+  const [exploreSpaceModal, setExploreSpaceModal] = useState(false);
+  const [portfolioModal, setportfolioModal] = useState(false);
 
   const toggleMusicalChat = () => setMusicalChatModal(!musicalChatModal);
   const togglePolyBlock = () => setPolyBlockModal(!polyBlockModal);
   const toggleArt = () => setArtModal(!artModal);
   const toggleSorting = () => setSortingModal(!sortingModal);
+  const toggleSpace = () => setExploreSpaceModal(!exploreSpaceModal);
+  const togglePortfolio = () => setportfolioModal(!portfolioModal);
 
   return (
     // <div className="projects-container text-center">
@@ -82,24 +90,49 @@ export default function Projects(props) {
     <div className="projects-container">
       <h1>My Favourite Projects</h1>
       <hr />
-      <div className="projects">
-        <div className="col-left-small" onClick={toggleMusicalChat}>
-          <IndividualProject imgPath={MusicalChat} projectName="Musical Chat" />
+      <div className="container projects">
+        <div className="row">
+          <div className="col-lg" onClick={toggleMusicalChat}>
+            <IndividualProject
+              imgPath={MusicalChat}
+              projectName="Musical Chat - Real Time Chat"
+            />
+          </div>
+          <div className="col-lg" onClick={togglePolyBlock}>
+            <IndividualProject
+              imgPath={PolyBlock}
+              projectName="PolyBlock - Mobile Game"
+            />
+          </div>
         </div>
-      </div>
-      <div className="projects">
-        <div className="col-right-small" onClick={toggleArt}>
-          <IndividualProject imgPath={RateMyArt} projectName="RateMyArt" />
+        <div className="row">
+          <div className="col-lg" onClick={toggleSorting}>
+            <IndividualProject
+              imgPath={SortingAlgoCover}
+              projectName="Sorting Algorithm Visualizer"
+            />
+          </div>
+
+          <div className="col-lg" onClick={toggleSpace}>
+            <IndividualProject
+              imgPath={ExploreSpace}
+              projectName="ExploreSpace.online"
+            />
+          </div>
         </div>
-      </div>
-      <div className="projects">
-        <div className="col-left-small" onClick={togglePolyBlock}>
-          <IndividualProject imgPath={PolyBlock} projectName="PolyBlock" />
-        </div>
-      </div>
-      <div className="projects">
-        <div className="col-right-small" onClick={toggleSorting}>
-          <IndividualProject imgPath={SortingAlgoCover} projectName="Sorting" />
+        <div className="row">
+          <div className="col-lg" onClick={toggleArt}>
+            <IndividualProject
+              imgPath={RateMyArt}
+              projectName="RateMyArt - Social Media"
+            />
+          </div>
+          <div className="col-lg" onClick={togglePortfolio}>
+            <IndividualProject
+              imgPath={Portfolio}
+              projectName="This Website!"
+            />
+          </div>
         </div>
       </div>
 
@@ -173,10 +206,7 @@ export default function Projects(props) {
 
                   <div className="col-md-4">
                     <ul>
-                      <a
-                        href="https://nifty-shannon-f54cb6.netlify.app/"
-                        target="_blank"
-                      >
+                      <a href="https://spotilove.online" target="_blank">
                         <li>
                           <i className="fa fa-code" /> Live Version{" "}
                           <span></span>
@@ -473,6 +503,157 @@ export default function Projects(props) {
 
         <ModalFooter>
           <button id="close-modal-bttn" onClick={toggleSorting}>
+            Cancel
+          </button>
+        </ModalFooter>
+      </Modal>
+
+      {/* ExploreSpace Visualizer Modal */}
+      <Modal
+        isOpen={exploreSpaceModal}
+        toggle={toggleSpace}
+        className={className}
+        size="lg"
+      >
+        <div className="modal-body">
+          <ModalHeader toggle={toggleSpace}>Explore Space</ModalHeader>
+          <ModalBody>
+            <div className="container">
+              <div className="row justify">
+                This project was made in 48 hours with 3 other partners for the
+                MLH To the Moon and Hacks Hackathon. THe project includes a lot
+                of space related features, such as an orbital mechanics
+                simulator, a three body problemm simulator, updated data about
+                nearby asteroids and much more. All the simmulators were made
+                using C# and the Unity Engine WebGL platform. The website was
+                made in ReactJS and Typescript.
+              </div>
+              <div className="row skills">
+                <span>
+                  Skills:{" "}
+                  <strong>
+                    C#, UnityEngine, ReactJS, Firebase, Nasa API, User
+                    Authentication, Google Geolocation API, TypeScript, Axios
+                  </strong>
+                </span>
+              </div>
+              <div className="row skills">
+                <span>Time Taken: 1 week</span>
+              </div>
+              <div className="row text-center justify-content-center" id="SAV">
+                <img src={ExploreSpace1} width="250px" />
+                <img src={ExploreSpace2} width="250px" />
+              </div>
+            </div>
+            <div className="modal-bttns">
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-md-4">
+                    <ul>
+                      <a
+                        href="https://github.com/machadop1407/Sorting-Visualizer"
+                        target="_blank"
+                      >
+                        <li>
+                          <i className="fa fa-github" /> Github <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </li>
+                      </a>
+                    </ul>
+                  </div>
+
+                  <div className="col-md-4">
+                    <ul>
+                      <a href="https://expl0re.space" target="_blank">
+                        <li>
+                          <i className="fa fa-code" /> Live Version{" "}
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </li>
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ModalBody>
+        </div>
+
+        <ModalFooter>
+          <button id="close-modal-bttn" onClick={toggleSpace}>
+            Cancel
+          </button>
+        </ModalFooter>
+      </Modal>
+
+      {/* PORTFOLIO Visualizer Modal */}
+      <Modal
+        isOpen={portfolioModal}
+        toggle={togglePortfolio}
+        className={className}
+        size="lg"
+      >
+        <div className="modal-body">
+          <ModalHeader toggle={togglePortfolio}>This Website!</ModalHeader>
+          <ModalBody>
+            <div className="container">
+              <div className="row justify">
+                I made this website entirely on ReactJS, with the
+                create-react-app boilerplate.
+              </div>
+              <div className="row skills">
+                <span>
+                  Skills: <strong>ReactJS, CSS, HTML, React-Icons</strong>
+                </span>
+              </div>
+              <div className="row skills">
+                <span>Time Taken: 1 week</span>
+              </div>
+            </div>
+            <div className="modal-bttns">
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-md-4">
+                    <ul>
+                      <a
+                        href="https://github.com/machadop1407/pedro-portfolio"
+                        target="_blank"
+                      >
+                        <li>
+                          <i className="fa fa-github" /> Github <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </li>
+                      </a>
+                    </ul>
+                  </div>
+
+                  <div className="col-md-4">
+                    <ul>
+                      <a href="/" target="_blank">
+                        <li>
+                          <i className="fa fa-code" /> Live Version{" "}
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </li>
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ModalBody>
+        </div>
+
+        <ModalFooter>
+          <button id="close-modal-bttn" onClick={togglePortfolio}>
             Cancel
           </button>
         </ModalFooter>

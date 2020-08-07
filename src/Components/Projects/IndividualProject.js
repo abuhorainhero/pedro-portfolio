@@ -8,7 +8,6 @@ const IndividualProject = ({ imgPath, projectName }) => {
         <div className="cards cards--two">
           <img src={imgPath} className="img-responsive" alt="Cards Image" />
           <span className="cards--two__rect"></span>
-          <span className="cards--two__tri"></span>
           <p>{projectName}</p>
         </div>
       </div>
