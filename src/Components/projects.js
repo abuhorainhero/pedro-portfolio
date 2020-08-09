@@ -116,7 +116,7 @@ export default function Projects(props) {
           <div className="col-lg" onClick={toggleSpace}>
             <IndividualProject
               imgPath={ExploreSpace}
-              projectName="ExploreSpace.online"
+              projectName="Expl0re.space"
             />
           </div>
         </div>
