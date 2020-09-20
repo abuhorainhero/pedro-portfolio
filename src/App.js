@@ -5,7 +5,8 @@ import Projects from "./Components/projects";
 import Footer from "./Components/Footer";
 import AboutMe from "./Components/AboutMe";
 
-import Resume from "./ProjectFiles/PedroMachadoResume.pdf";
+import Resume from "./ProjectFiles/ResumeV3.pdf";
+import WorkExperience from "./Components/WorkExperience";
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
                 >
                   <li className="fa fa-linkedin"></li>
                 </a>
-                <a href={Resume} download="PedroMachadoResume.pdf">
+                <a href={Resume} download="PedroMachado.pdf">
                   <li className="fa fa-address-book-o"></li>
                 </a>
               </div>
@@ -48,8 +49,10 @@ function App() {
         </div>
       </div>
 
+      <div className="experienceLinkTo">
+        <WorkExperience />
+      </div>
       <div className="projectsLinkTo">
-        {/* Projects Section Component */}
         <Projects />
       </div>
 

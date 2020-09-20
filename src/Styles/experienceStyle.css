@@ -1,0 +1,35 @@
+.experience-container {
+    font-family: "Titillium Web", sans-serif;
+    margin-top: 50px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.experience-container hr {
+    margin-top: 15px;
+    height: 5px;
+    max-width: 50px;
+    background-color: #2d283e;
+}
+
+.experience-container .container-fluid hr {
+    margin-top: 15px;
+    height: 3px;
+    width: 100%;
+    max-width: none;
+    background-color: #2d283e;
+}
+
+.container-fluid.experience .row .col-lg-4 {
+    width: 100%;
+    margin: 50px;
+    text-align: left;
+}
+
+.experience-container p {
+    margin-top: 10px;
+}
+
+.experience-container li {
+    list-style-type: circle;
+}

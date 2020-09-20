@@ -28,6 +28,18 @@ export default function Header() {
             <NavItem>
               <NavLink>
                 <Link
+                  to="experienceLinkTo"
+                  smooth={true}
+                  offset={-126}
+                  duration={1000}
+                >
+                  Experience
+                </Link>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>
+                <Link
                   to="projectsLinkTo"
                   smooth={true}
                   offset={-126}

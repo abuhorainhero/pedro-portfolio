@@ -15,12 +15,12 @@ const AboutMe = () => {
 
         <ul>
           <b>FRONT-END SKILLS</b>
-          <li>-> HTML </li>
-          <li>-> CSS </li>
-          <li>-> JavaScript </li>
-          <li>-> ReactJS</li>
-          <li>-> Jquery</li>
-          <li>-> Bootstrap 4</li>
+          <li>-> ReactJS </li>
+          <li>-> HTML / CSS </li>
+          <li>-> TypeScript / JavaScript </li>
+          <li>-> Material UI</li>
+          <li>-> React Native</li>
+          <li>-> Redux</li>
         </ul>
         <img src={FrontEndImg} id="skills-img-disappear" />
       </div>
@@ -30,18 +30,19 @@ const AboutMe = () => {
 
         <ul>
           <b>BACK-END SKILLS</b>
-          <li> -> NodeJs </li>
-          <li> -> ExpressJs </li>
-          <li> -> MySQL </li>
+          <li> -> NodeJs / ExpressJS </li>
+          <li> -> GraphQL / Apollo </li>
+          <li> -> MySQL / PostgreSQL</li>
           <li> -> MongoDB </li>
-          <li> -> Google Cloud API </li>
-          <li> -> AWS </li>
+          <li> -> AWS - EC2, S3, Route 53 </li>
+          <li> -> REST </li>
         </ul>
       </div>
 
       <div className="row extra-skills">
-        JAVA Object Oriented Programming | Unity Engine With C# | Photoshop CC |
-        Blender 3D Modelling
+        Python | Data Structures and Algorithms | Object Oriented Programming |
+        Software Design and Architectures - SOLID, MVC, Microservices | Git |
+        NPM and Yarn | C# Unity Engine
       </div>
 
       <div className="row extra-skills-invisible">
@@ -53,15 +54,18 @@ const AboutMe = () => {
         </ul>
       </div>
 
-      <div className="row text-center justify-content-center about-description">
+      <div
+        className="row text-center justify-content-center about-description"
+        style={{ marginBottom: 20 }}
+      >
         <div className="col-sm-6">
           <p>
             I can work on both the front-end and the back-end of any
-            application. I am also experienced with Scalable Database
-            Architecture Design, deployment of projects, and object-oriented
-            programming. Currently, I am a student at the University Of British
-            Columbia pursuing a major in Mathematics. On my spare time I work on
-            various different projects to build my skills and continue learning.
+            application. I am also experienced with building scalable projects,
+            and managing large code bases. Currently, I am a student at the
+            University Of British Columbia pursuing a major in Computer Science
+            and Mathematics. On my spare time I work on various different
+            projects to build my skills and continue learning.
           </p>
         </div>
       </div>

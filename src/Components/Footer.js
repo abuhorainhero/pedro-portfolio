@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/footerStyle.css";
 
-import Resume from "../ProjectFiles/PedroMachadoResume.pdf";
+import Resume from "../ProjectFiles/ResumeV3.pdf";
 
 export default function Footer() {
   return (
@@ -42,7 +42,7 @@ export default function Footer() {
                   <h1>
                     {" "}
                     My Resume:{" "}
-                    <a href={Resume} download="PedroMachadoResume.pdf">
+                    <a href={Resume} download="PedroMachado.pdf">
                       <li className="fa fa-address-book-o">
                         <span className="tooltiptext">Download Resume</span>
                       </li>

@@ -30,12 +30,16 @@ import ExploreSpace2 from "../Images/space2.png";
 
 // Portfolio Imports
 import Portfolio from "../Images/portfolio.png";
-// import GoodNews1 from "../Images/goodNews2.png";
+
+// Portfolio Imports
+import PinterestClone from "../Images/pinterestcloneIMG.png";
 
 import AppleBadge from "../Images/appleBadge.webp";
 
 import MusicalChatVideo from "../Videos/chatdemovideo.mp4";
 import IndividualProject from "./Projects/IndividualProject";
+
+import ReactPlayer from "react-player";
 
 export default function Projects(props) {
   const { buttonLabel, className } = props;
@@ -45,6 +49,7 @@ export default function Projects(props) {
   const [artModal, setArtModal] = useState(false);
   const [sortingModal, setSortingModal] = useState(false);
   const [exploreSpaceModal, setExploreSpaceModal] = useState(false);
+  const [pinterestModal, setPinterestModal] = useState(false);
   const [portfolioModal, setportfolioModal] = useState(false);
 
   const toggleMusicalChat = () => setMusicalChatModal(!musicalChatModal);
@@ -52,56 +57,25 @@ export default function Projects(props) {
   const toggleArt = () => setArtModal(!artModal);
   const toggleSorting = () => setSortingModal(!sortingModal);
   const toggleSpace = () => setExploreSpaceModal(!exploreSpaceModal);
+  const togglePinterest = () => setPinterestModal(!pinterestModal);
   const togglePortfolio = () => setportfolioModal(!portfolioModal);
 
   return (
-    // <div className="projects-container text-center">
-    //   <h1>My Favourite Projects</h1>
-    //   <hr />
-    //   <div className="container-fluid">
-    //     <div className="row projects">
-    //       <div className="col-lg-8" onClick={toggleMusicalChat}>
-    //         <IndividualProject
-    //           imgPath={MusicalChat}
-    //           projectName="Musical Chat"
-    //         />
-    //       </div>
-    //     </div>
-    //     <div className="row projects">
-    //       <div className="col-lg-8" onClick={toggleArt}>
-    //         <IndividualProject imgPath={RateMyArt} projectName="RateMyArt" />
-    //       </div>
-    //     </div>
-    //     <div className="row projects">
-    //       <div className="col-lg-8" onClick={togglePolyBlock}>
-    //         <IndividualProject imgPath={PolyBlock} projectName="PolyBlock" />
-    //       </div>
-    //     </div>
-    //     <div className="row projects">
-    //       <div className="col-lg-8" onClick={toggleSorting}>
-    //         <IndividualProject
-    //           imgPath={SortingAlgoCover}
-    //           projectName="Sorting"
-    //         />
-    //       </div>
-    //     </div>
-    //   </div>
-
     <div className="projects-container">
       <h1>My Favourite Projects</h1>
       <hr />
       <div className="container projects">
         <div className="row">
+          <div className="col-lg" onClick={togglePinterest}>
+            <IndividualProject
+              imgPath={PinterestClone}
+              projectName="Pinterest Clone With GraphQL and ReactJS"
+            />
+          </div>
           <div className="col-lg" onClick={toggleMusicalChat}>
             <IndividualProject
               imgPath={MusicalChat}
               projectName="Musical Chat - Real Time Chat"
-            />
-          </div>
-          <div className="col-lg" onClick={togglePolyBlock}>
-            <IndividualProject
-              imgPath={PolyBlock}
-              projectName="PolyBlock - Mobile Game"
             />
           </div>
         </div>
@@ -113,10 +87,10 @@ export default function Projects(props) {
             />
           </div>
 
-          <div className="col-lg" onClick={toggleSpace}>
+          <div className="col-lg" onClick={togglePolyBlock}>
             <IndividualProject
-              imgPath={ExploreSpace}
-              projectName="Expl0re.space"
+              imgPath={PolyBlock}
+              projectName="PolyBlock - Mobile Game"
             />
           </div>
         </div>
@@ -127,10 +101,10 @@ export default function Projects(props) {
               projectName="RateMyArt - Social Media"
             />
           </div>
-          <div className="col-lg" onClick={togglePortfolio}>
+          <div className="col-lg" onClick={toggleSpace}>
             <IndividualProject
-              imgPath={Portfolio}
-              projectName="This Website!"
+              imgPath={ExploreSpace}
+              projectName="Expl0re.space"
             />
           </div>
         </div>
@@ -206,7 +180,10 @@ export default function Projects(props) {
 
                   <div className="col-md-4">
                     <ul>
-                      <a href="https://spotilove.online" target="_blank">
+                      <a
+                        href="https://nifty-shannon-f54cb6.netlify.app/"
+                        target="_blank"
+                      >
                         <li>
                           <i className="fa fa-code" /> Live Version{" "}
                           <span></span>
@@ -590,28 +567,45 @@ export default function Projects(props) {
         </ModalFooter>
       </Modal>
 
-      {/* PORTFOLIO Visualizer Modal */}
+      {/* Pinterest Clone Modal */}
       <Modal
-        isOpen={portfolioModal}
-        toggle={togglePortfolio}
+        isOpen={pinterestModal}
+        toggle={togglePinterest}
         className={className}
         size="lg"
       >
         <div className="modal-body">
-          <ModalHeader toggle={togglePortfolio}>This Website!</ModalHeader>
+          <ModalHeader toggle={togglePinterest}>Pinterest Clone</ModalHeader>
           <ModalBody>
             <div className="container">
               <div className="row justify">
-                I made this website entirely on ReactJS, with the
-                create-react-app boilerplate.
+                This project was made in as a way to practice my GraphQL skills.
+                I also used it to learn how to implement an ORM into my
+                back-end, which in this case I used Sequelize. It replicats the
+                famous column layout that Pinteres uses, and it exemplifies
+                several small features present in the real website. I made a
+                GraphQL API for my backend using Apollo Server, which allowed a
+                wall between the clients and the API. The user can also login
+                with their google account, and all info related to the user is
+                saved in a ClearDB MySQL database. If the user wants to upload a
+                pin, the image (and other details) are inserted to the database
+                and uploaded to Cloudinary as an image storage.
               </div>
               <div className="row skills">
                 <span>
-                  Skills: <strong>ReactJS, CSS, HTML, React-Icons</strong>
+                  Skills:{" "}
+                  <strong>
+                    ReactJS, GraphQL Apollo, Sequelize ORM, MySQL, NodeJS,
+                    ExpressJS, Styled Components, TypeScript, JavaScript, Google
+                    OAUTH, Cloudinary
+                  </strong>
                 </span>
               </div>
               <div className="row skills">
-                <span>Time Taken: 1 week</span>
+                <span>Time Taken: 2 Weeks</span>
+              </div>
+              <div className="row text-center justify-content-center">
+                <ReactPlayer url="https://www.youtube.com/watch?v=zbCTh97ijTE&ab_channel=PedroTech" />
               </div>
             </div>
             <div className="modal-bttns">
@@ -620,7 +614,7 @@ export default function Projects(props) {
                   <div className="col-md-4">
                     <ul>
                       <a
-                        href="https://github.com/machadop1407/pedro-portfolio"
+                        href="https://github.com/machadop1407/Sorting-Visualizer"
                         target="_blank"
                       >
                         <li>
@@ -635,7 +629,7 @@ export default function Projects(props) {
 
                   <div className="col-md-4">
                     <ul>
-                      <a href="/" target="_blank">
+                      <a href="https://expl0re.space" target="_blank">
                         <li>
                           <i className="fa fa-code" /> Live Version{" "}
                           <span></span>
@@ -653,7 +647,7 @@ export default function Projects(props) {
         </div>
 
         <ModalFooter>
-          <button id="close-modal-bttn" onClick={togglePortfolio}>
+          <button id="close-modal-bttn" onClick={toggleSpace}>
             Cancel
           </button>
         </ModalFooter>
