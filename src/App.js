@@ -22,10 +22,10 @@ function App() {
               <hr />
               <h1>Pedro Henrique Machado</h1>
               <p>
-                I don't believe in <b>passion</b>. I believe in specialization
-                of labour. If you're good in something, you should continue
-                working in that untill you become an expert. And I am really{" "}
-                <b>good</b> at coding.
+                Computer Science and Mathematics Student @ University of British
+                Columbia. I love coding, and I aspire to become a great
+                developer. I currently code every day, and help thousands of
+                students in my youtube channel!
               </p>
               <hr />
               <div className="social-links">

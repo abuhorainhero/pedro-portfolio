@@ -45,7 +45,10 @@ const AboutMe = () => {
         NPM and Yarn | C# Unity Engine
       </div>
 
-      <div className="row extra-skills-invisible">
+      <div
+        className="row extra-skills-invisible"
+        style={{ textJustify: "center" }}
+      >
         <ul>
           <li> -> JAVA Object Oriented Programming </li>
           <li> -> Unity Engine With C# </li>
