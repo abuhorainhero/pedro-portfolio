@@ -23,9 +23,9 @@ function App() {
               <h1>Pedro Henrique Machado</h1>
               <p>
                 Computer Science and Mathematics Student @ University of British
-                Columbia. I love coding, and I aspire to become a great
+                Columbia. I love <b>coding </b>, and I aspire to become a great
                 developer. I currently code every day, and help thousands of
-                students in my youtube channel!
+                students through my youtube channel!
               </p>
               <hr />
               <div className="social-links">
